@@ -1,14 +1,31 @@
-import Kotak1 from "./componen/Kotak1"
-import Kotak2 from "./componen/Kotak2"
-import Kotak3 from "./componen/Kotak3"
+import Navbar from "./componen/Navbar";
+import Content from "./componen/Content";
+import Card from "./componen/Card";
+import Footer from "./componen/Footer";
 
-function App() {
-  return (
+
+function App() {  return (
     <>
-      <h1>Hello world </h1>
-      <Kotak1/>
-      <Kotak2/>
-      <Kotak3/>
+    <div className="row">
+      <div className="container">
+        <Navbar/>
+      </div>
+    </div>
+    <div className="row">
+      <div className="container">
+        <Content/>
+      </div>
+    </div>
+    <div className="row">
+      <div className="container">
+        <Card/>
+      </div>
+    </div>
+    <div className="row">
+      <div className="container">
+        <Footer/>
+      </div>
+    </div>
     </>
   )
 }
