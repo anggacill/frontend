@@ -44,7 +44,7 @@ function Content() {
     }, 60000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [cards]);
 
   const handleEditClick = (id) => {
     setCards((prevCards) =>
@@ -76,6 +76,10 @@ function Content() {
         creator, etc. Make it short and sweet, but not too short so folks don't
         simply skip over it entirely.
       </p>
+      <div className="text-center">
+        <a href="#" className="btn btn-primary me-3">main color</a>
+        <a href="#" className="btn btn-secondary">secondary color</a>
+      </div>
       <Link to="/tambah" className="navbar-brand btn btn-outline-secondary bg-primary m-2">tambah album lain</Link>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 m-4 mt-5">
         {cards.map((card) => (
@@ -102,6 +106,7 @@ function Content() {
                           )
                         )
                       }
+                      key={`title-${card.id}`}
                     />
                     <textarea
                       className="form-control mb-2"
@@ -115,6 +120,7 @@ function Content() {
                           )
                         )
                       }
+                      key={`text-${card.id}`}
                     />
                   </>
                 ) : (
