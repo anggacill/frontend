@@ -1,0 +1,33 @@
+.intro{
+    height: 100vh;
+    background-image: url('../assets/images/bg/main.webp') ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.trending{
+    background-image: url('../assets/images/bg/scifi.jpg') ;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.card{
+    height: auto;
+    width: 350px;
+}
+.card-body{
+    height: auto;
+}
+.superhiro{
+    background-image: url('../assets/images/bg/romance.webp') ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+img {
+    height: 600px;
+    object-fit: cover;
+}
+.tombol{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
