@@ -12,7 +12,10 @@ function Navbar() {
        <a className="nav-link" href="#trending">Trending </a>
      </li>
      <li className="nav-item active">
-       <a className="nav-link" href="#superhero">Hero</a>
+       <a className="nav-link" href="#superhiro">Hero</a>
+     </li>
+     <li className="nav-item active">
+       <a className="nav-link" href="#">login</a>
      </li>
    </ul>
  </div>

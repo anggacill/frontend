@@ -12,9 +12,8 @@ function App() {
           <Navbar />
           <Intro />
         </div>
-
           <Trending />
-          <Superhiro />    
+          <Superhiro />  
           <Footer />
           <a href="#top"className='btn btn-warning p-2 tombol'>go tu top</a>
     </>      
